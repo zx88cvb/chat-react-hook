@@ -1,5 +1,28 @@
 import { createGlobalStyle } from 'styled-components';
 
+const BaseStyle = {
+  "theme-color": "#fdfbfb",
+  "theme-color-dark": "#222831",
+  "theme-color-primary": "#448EF6",
+  "theme-color-primary-dark": "#007bff",
+  "theme-color-shadow": "rgba(212, 68, 57, .5)",
+  "font-color-light": "#222831",
+  "font-color-light-hover": "#007bff",
+  "font-color-light-shadow": "rgba(241, 241, 241, 0.6)",//略淡
+  "font-color-desc": "#393e46",
+  "font-color-desc-dark": "#B1B1C1", //略淡
+  "font-size-ss": "10px",
+  "font-size-s": "12px",
+  "font-size-m": "14px",
+  "font-size-l": "16px",
+  "font-size-ll": "18px",
+  "border-color": "#e4e4e4",
+  "border-color-v2": "rgba(228, 228, 228, 0.1)",
+  "background-color": "#f2f3f4",
+  "background-color-shadow": "rgba(0, 0, 0, 0.3)",
+  "highlight-background-color": "#fff",
+};
+
 export const CommonStyle = createGlobalStyle`
   body, input, button, select, optgroup, option, textarea, blockquote, dd, dl, figure, form, pre, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
@@ -11,7 +34,9 @@ export const CommonStyle = createGlobalStyle`
     scroll-behavior: smooth;
   } */
   body {
-    background-color: #fdfbfb;
+    background-image: url('/pexels-vlad-chețan-3018819.jpg');
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
   }
   small {
     font-size: 80%;

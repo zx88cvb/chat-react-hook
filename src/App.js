@@ -14,7 +14,9 @@ function App() {
       <GlobalStyle />
       <CommonStyle />
       <BrowserRouter>
-        {renderRoutes(routers)}
+        <div className="App">   
+          {renderRoutes(routers)}
+        </div>
       </BrowserRouter>
     </Provider>
   );

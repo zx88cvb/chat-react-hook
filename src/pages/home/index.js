@@ -1,8 +1,24 @@
 import React from 'react';
 
-function Home() {
+import SideBar from './sideBar';
+import FunctionBar from './functionBar';
+import Chat from './chat';
+import {
+  Main
+} from './style';
+
+function Home(props) {
   return (
-    <div>home</div>
+    <Main>
+      <div className="container">
+        <div className="chat-group chat-block">
+          <SideBar />
+          <FunctionBar />
+          <Chat />
+        </div>
+      </div>
+      
+    </Main>
   );
 }
 

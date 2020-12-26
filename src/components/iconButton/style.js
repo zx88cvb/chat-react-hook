@@ -8,4 +8,9 @@ export const DivBtn = styled.div`
   &:hover {
       color: rgba(247, 247, 247, 1);
   }
+
+  svg {
+    width: ${props => props.iconWidth};
+    height: ${props => props.iconHeight};
+  }
 `;

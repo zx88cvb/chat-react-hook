@@ -1,10 +1,14 @@
 import React from 'react';
 
+import HeaderBar from './header';
+
+import { DivChat } from './style';
+
 function Chat(props) {
   return (
-    <div>
-      Chat
-    </div>
+    <DivChat>
+      <HeaderBar />
+    </DivChat>
   );
 }
 

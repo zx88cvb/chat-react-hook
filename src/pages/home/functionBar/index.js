@@ -7,7 +7,7 @@ import { DivFun } from './style';
 function FuntionBar(props) {
   // icon style
   const iconStyle = {width: '1.4rem', height: '1.4rem'};
-  const iconClearStyle = {width: '32px', height: '32px', color: 'rgba(5,159,149, 1.05)'};
+  const iconClearStyle = {width: '32px', height: '32px', hoverColor: 'rgba(5,159,149, 1.05)'};
 
   return (
     <DivFun>

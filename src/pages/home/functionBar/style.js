@@ -31,10 +31,12 @@ export const DivFun = styled.div`
         color: #333;
 
         input {
-          width: 100%;
+          width: 82%;
           height: 100%;
 
           font-size: 14px;
+          padding-left: 35px;
+          padding-right: 15px;
           padding-top: 2px;
 
           border: none;
@@ -42,6 +44,17 @@ export const DivFun = styled.div`
           background-color: rgba(255, 255, 255, 0.9);
 
           outline: none;
+          overflow: visible;
+        }
+        .icon-btn {
+          width: 32px;
+          height: 32px;
+
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 5px;
         }
       }
 
@@ -51,6 +64,12 @@ export const DivFun = styled.div`
         left: 20px;
         top: 22px;
         color: #666;
+      }
+
+      .icon-add {
+        width: 40px;
+        height: 40px;
+        display: block;
       }
     }
   }

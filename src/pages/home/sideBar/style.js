@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const DivSideBar = styled.div`
   width: 80px;
   min-width: min-content;
-  background-color: rgb(5 159 149 / 0.78);
+  background-color: rgb(5 159 149 / 0.80);
   display: flex;
   flex-direction: column;
   align-items: center;

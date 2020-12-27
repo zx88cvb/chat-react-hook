@@ -6,7 +6,7 @@ export const DivBtn = styled.div`
   cursor: pointer;
 
   &:hover {
-      color: rgba(247, 247, 247, 1);
+      color: ${props => props.color? props.color: 'rgba(247, 247, 247, 1)'};
   }
 
   svg {

@@ -1,12 +1,29 @@
 import {put, select, takeEvery} from 'redux-saga/effects'
 import * as constants from './constants';
-import { 
+import {
+  getUserSuccessSaga,
   loginByUsernameSaga
 } from './actionCreators';
 import { ERR_OK } from '@/api/constants';
 import {
   loginByUsername as login
 } from '@/api/user/login';
+
+/**
+ * 根据用户名/邮箱登录
+ */
+function* getUser() {
+  try {
+    // const params = yield select(state => state.user.user);
+    console.log('user');
+    yield put(getUserSuccessSaga({user:{id: 1}}));
+  } catch(e) {
+    yield put({
+      type: constants.SET_MESSAGE,
+      msg: e
+    })
+  }
+}
 
 /**
  * 根据用户名/邮箱登录
@@ -34,5 +51,6 @@ function* loginByUsername() {
 }
 
 export default function* userSaga() {
+  yield takeEvery(constants.GET_USER, getUser);
   yield takeEvery(constants.LOGIN_USERNAME, loginByUsername);
 }

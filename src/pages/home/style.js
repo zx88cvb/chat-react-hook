@@ -8,7 +8,10 @@ export const Main = styled.main`
   }
 
   .chat-block {
-    padding: 30px 0;
-    height: 800px;
+    position: absolute;
+    width: 74%;
+    height: 90%;
+    left: 12%;
+    top: 5%;
   }
 `;

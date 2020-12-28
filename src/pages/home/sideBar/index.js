@@ -26,6 +26,11 @@ function SideBar(props) {
         <div className="button-item">
           <IconButton
             style={iconStyle}
+            xlinkHref="#icon-info" />
+        </div>
+        <div className="button-item">
+          <IconButton
+            style={iconStyle}
             xlinkHref="#icon-OFF" />
         </div>
       </div>

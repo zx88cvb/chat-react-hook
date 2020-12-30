@@ -1,5 +1,6 @@
 import React from 'react';
 
+import useLoginStatus from '@/hooks/useLoginStatus';
 import IconButton from '@/components/iconButton';
 import { DivInput } from './style';
 
@@ -9,6 +10,9 @@ function ChatInput(props) {
     height: '1.8rem',
     color: '#a5b5c0',
     hoverColor: 'rgb(5 159 149)'};
+
+  // 判断用户是否登录
+  const isLogin = useLoginStatus();
 
   return (
     <DivInput>
